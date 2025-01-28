@@ -2,24 +2,22 @@
     background-color: #010101 !important;
 }
 
+.navbar{
+    padding: 32px;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     font-size: 24px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: rgba(255, 255, 255, 1);
+    padding-left: 18px;
+    padding-right: 18px;
+    color: #fff;
 }
 
 .navbar-dark .navbar-brand {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-section.header{
-    background: url('../assets/images/bg_header.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
 
 section.header .header-content .container{
     height: 90vh;
@@ -39,12 +37,16 @@ section.header .header-content .container{
 .head-content button{
     background-color: #EC5B1B;
     border: none;
-    padding: 10px 24px;
-    font-size: 24px;
-    font-weight: bold;
+    padding: 12px 36px;
+    font-size: 20px;
+    font-weight: 600;
     color: #fff;
-    border-radius: 30px;
+    border-radius: 60px;
     margin-top: 20px;
+}
+
+.head-content button:hover {
+    background-color: #F5A623;
 }
 
 .customizable{
@@ -64,8 +66,4 @@ section.header .header-content .container{
 
 .madeorder h1{
     width: 500px;
-}
-
-.btn-download {
-
 }
