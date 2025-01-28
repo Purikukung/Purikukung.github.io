@@ -34,7 +34,7 @@ section.header .header-content .container{
     margin-bottom: 30px;
 }
 
-.head-content button{
+.btn-red{
     background-color: #EC5B1B;
     border: none;
     padding: 12px 36px;
@@ -45,7 +45,7 @@ section.header .header-content .container{
     margin-top: 20px;
 }
 
-.head-content button:hover {
+.btn-red:hover {
     background-color: #F5A623;
 }
 
