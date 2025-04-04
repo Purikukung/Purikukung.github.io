@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TrashTrack+</title>
+    <style>
+
+        /* Introduction Section */
+        .introduction-section h1 {
+            margin-left: 38px;
+            font-size: 50px;
+        }
+
+        .introduction {
+            background-color: white; /* White background added here */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .introduction img {
+            max-width: 100%;
+            border-radius: 8px;
+            width: 150px; /* Adjust the width of the image */
+        }
+
+        .introduction .content {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .introduction h3 {
+            color: #333;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .introduction p {
+            color: #3a3a3a;
+            font-size: 1em;
+            margin-top: 10px;
+            line-height: 1.6;
+            text-align: justify; /* จัดย่อหน้าพารากราฟ */
+            text-indent: 30px; /* เพิ่มการย่อหน้า */
+        }
+
+         /* Theory Section */
+         .theory-section h1 {
+            margin-left: 38px;
+            font-size: 50px;
+        }
+
+         .theory {
+            background-color: white; /* White background added here */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .theory img {
+            max-width: 100%;
+            border-radius: 8px;
+            width: auto; /* Adjust the width of the image */
+            display: block;
+            margin-left: auto;  /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+        }
+
+        .theory .content {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .theory h3 {
+            color: #333;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .theory p {
+            color: #3a3a3a;
+            font-size: 1em;
+            margin-top: 10px;
+            line-height: 1.6;
+            text-align: justify; /* จัดย่อหน้าพารากราฟ */
+            text-indent: 30px; /* เพิ่มการย่อหน้า */
+        }
+
+        /* Conclusion Section */
+        .conclusion-section h1 {
+            margin-left: 38px;
+            font-size: 50px;
+        }
+
+        .conclusion {
+            background-color: white; /* White background added here */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .conclusion img {
+            max-width: 100%;
+            border-radius: 8px;
+            width: 150px; /* Adjust the width of the image */
+        }
+
+        .conclusion .content {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .conclusion h3 {
+            color: #333;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .conclusion p {
+            color: #3a3a3a;
+            font-size: 1em;
+            margin-top: 10px;
+            line-height: 1.6;
+            text-align: justify; /* จัดย่อหน้าพารากราฟ */
+            text-indent: 30px; /* เพิ่มการย่อหน้า */
+        }
+
+        /* Poster Section */
+        .poster {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .poster img {
+            max-width: 100%;
+            border-radius: 8px;
+            width: 150px; /* Adjust the width of the image */
+        }
+
+        .poster .content {
+            flex: 1;
+            margin-left: 40px;
+        }
+
+        .poster h3 {
+            color: #333;
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .poster p {
+            color: #666;
+            font-size: 1.2em;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .poster a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .poster a:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .poster {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .poster img {
+                width: 120px; /* Adjust image width for smaller screens */
+                margin-bottom: 15px;
+            }
+
+            .poster .content {
+                margin-left: 0;
+            }
+
+            .poster h3 {
+                font-size: 1.6em;
+            }
+
+            .poster p {
+                font-size: 1em;
+            }
+
+            .poster a {
+                padding: 8px 16px;
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .poster h3 {
+                font-size: 1.4em;
+            }
+
+            .poster p {
+                font-size: 0.9em;
+            }
+
+            .poster a {
+                font-size: 0.9em;
+                padding: 6px 12px;
+            }
+        }
+
+        footer {
+            background-color: #333333; /* Dark grey background */
+            color: white; /* White text */
+            text-align: left;
+            padding: 10px 20px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto; /* Ensure footer stays at the bottom */
+            box-sizing: border-box; /* Include padding in footer size */
+        }
+
+        footer div {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 5px;
+            padding: 5px 0;
+        }
+
+        footer a {
+            background-color: #006400; /* Dark green background */
+            color: white; /* White text */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            border: 2px solid #006400;
+            transition: 0.3s; /* Effect on hover */
+        }
+
+        footer a:hover {
+            background-color: white; /* White background on hover */
+            color: #006400; /* Dark green text on hover */
+            border-color: #006400;
+            text-decoration: none;
+        }
+
+        /* Make the text "TrashTrack+" bold and larger */
+        footer .footer-title {
+            font-weight: bold; /* Make the text bold */
+            font-size: 24px; /* Make the text larger */
+        }
+
+        /* Footer responsiveness */
+        @media (max-width: 768px) {
+            footer {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            footer div {
+                margin-bottom: 10px;
+            }
+
+            footer a {
+                width: auto; /* Keep the width auto so buttons retain their normal size */
+                padding: 10px 20px; /* Keep padding consistent */
+                margin-top: 10px;
+            }
+
+            .footer-title {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer a {
+                padding: 10px 20px; /* Keep padding consistent */
+                font-size: 14px;
+            }
+
+            .footer-title {
+                font-size: 18px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>TrashTrack+</h1>
+            <div class="menu-icon-container" onclick="toggleMenu()">
+                <div class="menu-icon"></div>
+                <span class="menu-text">Menu</span>
+            </div>
+        <nav id="nav">
+            <a href="index.html">HOME</a>
+            <a href="#introduction">INTRODUCTION</a>
+            <a href="#related-theory">THEORY</a>
+            <a href="#experiment-results-and-conclusion">CONCLUSION</a>
+            <a href="#poster">POSTER</a>
+            <a href="#footer">CONTACT</a>
+            <a href="creator.html">CREATORS</a>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="introduction-section">
+        <div class="container">
+            <h1>INTRODUCTION</h1>
+            <div class="introduction">
+                <!--<img src="1548632-removebg-preview.png" alt="About Image"> -->
+                <div class="content">
+                    <p></p>
+                    <h3>บทนำ</h3>
+                    <p></p>
+                    <p>ที่มาและความสำคัญ <br> 
+                        ในปัจจุบันปัญหาการจัดการขยะถือเป็นหนึ่งในประเด็นสำคัญที่ส่งผลกระทบต่อสิ่งแวดล้อมและคุณภาพชีวิตของประชาชนอย่างหลีกเลี่ยงไม่ได้ การจัดเก็บขยะที่ไม่มีประสิทธิภาพ ไม่เป็นระบบ และขาดเทคโนโลยีที่เหมาะสม ทำให้เกิดปัญหาต่าง ๆ เช่น การสะสมของขยะในพื้นที่สาธารณะ ส่งกลิ่นเหม็น เป็นแหล่งเพาะพันธุ์เชื้อโรคและสัตว์พาหะนำโรค เช่น หนูและแมลงสาบ นอกจากนี้ การแยกประเภทขยะที่ไม่ถูกต้องยังเป็นอุปสรรคต่อการรีไซเคิลและการกำจัดขยะอย่างเหมาะสม ซึ่งส่งผลให้มีขยะจำนวนมากถูกนำไปฝังกลบโดยไม่จำเป็น ก่อให้เกิดมลพิษทางดิน น้ำ และอากาศ รวมถึงเพิ่มปริมาณก๊าซเรือนกระจกที่เป็นสาเหตุของภาวะโลกร้อน แม้ว่าปัจจุบันจะมีมาตรการรณรงค์ให้ประชาชนตระหนักถึงการแยกขยะก่อนทิ้ง และการนำเทคโนโลยีมาใช้ในการบริหารจัดการขยะในบางพื้นที่ แต่ยังพบว่า ระบบถังขยะอัจฉริยะที่มีอยู่ในปัจจุบันยังคงมีข้อจำกัด ส่วนใหญ่เป็นเพียงถังขยะที่ติดตั้งเซ็นเซอร์วัดระดับขยะเพื่อแจ้งเตือนเมื่อถังเต็ม แต่ยังไม่มีการพัฒนาระบบที่สามารถแยกประเภทขยะโดยอัตโนมัติอย่างมีประสิทธิภาพ อีกทั้งข้อมูลจากถังขยะเหล่านี้มักไม่ถูกเชื่อมโยงกับแพลตฟอร์มออนไลน์ที่สามารถเข้าถึงและใช้งานได้สะดวก ส่งผลให้การจัดเก็บขยะยังคงล่าช้า และไม่สามารถแก้ไขปัญหาได้อย่างครอบคลุม แนวทางหนึ่งที่สามารถช่วยเพิ่มประสิทธิภาพในการจัดการขยะได้คือ การนำเทคโนโลยี Internet of Things (IoT) มาใช้ในระบบถังขยะอัจฉริยะ เนื่องจาก IoT ช่วยให้สามารถตรวจสอบและติดตามสถานะของถังขยะได้แบบเรียลไทม์ ผู้ใช้งานสามารถเข้าถึงข้อมูลระดับการเต็มของถังขยะ ข้อมูลประเภทขยะที่ถูกทิ้ง และสามารถจัดการขยะได้อย่างเป็นระบบผ่านเว็บไซต์หรือแอปพลิเคชันบนสมาร์ทโฟน เทคโนโลยีนี้ยังสามารถช่วยหน่วยงานที่รับผิดชอบในการจัดเก็บขยะวางแผนเส้นทางเก็บขยะให้มีประสิทธิภาพมากขึ้น ลดการใช้พลังงานและต้นทุนในการดำเนินงาน  
+                    โครงการนี้จึงมีเป้าหมายในการพัฒนาถังขยะอัจฉริยะที่สามารถแยกประเภทขยะได้อย่างแม่นยำ พร้อมส่งข้อมูลไปยังระบบออนไลน์ เพื่อให้ประชาชนและหน่วยงานที่เกี่ยวข้องสามารถตรวจสอบสถานะของถังขยะได้แบบเรียลไทม์ ซึ่งจะช่วยลดปัญหาการจัดเก็บขยะที่ไม่ทันการณ์ ลดปริมาณขยะที่ถูกกำจัดอย่างไม่เหมาะสม และส่งเสริมการรีไซเคิลให้มีประสิทธิภาพมากขึ้น อีกทั้งยังเป็นการนำเทคโนโลยีมาประยุกต์ใช้ให้เกิดประโยชน์สูงสุดในชีวิตประจำวัน อันจะนำไปสู่การจัดการขยะที่ยั่งยืน ลดผลกระทบต่อสิ่งแวดล้อม และช่วยให้เมืองมีความสะอาด น่าอยู่มากยิ่งขึ้น  <br> 2. วัตถุประสงค์  <br>  
+                    1) เพื่อพัฒนาถังขยะอัจฉริยะที่สามารถแยกขยะประเภทต่าง ๆ ได้โดยอัตโนมัติ <br>
+                    2) เพื่อให้สามารถตรวจสอบสถานะการเต็มของถังขยะและส่งข้อมูลผ่านระบบ IoT ไปยังแพลตฟอร์มออนไลน์ <br>
+                    3) เพื่อสนับสนุนการจัดการขยะอย่างมีประสิทธิภาพ และเพิ่มความสะดวกในการรวบรวมขยะ  <br>  3. ภาพรวมหรือหลักการทำงานของโครงงาน  <br>  
+                    ภาพรวมโครงงาน
+                    โครงงานนี้มีวัตถุประสงค์เพื่อสร้างถังขยะอัจฉริยะที่ผสมผสานเทคโนโลยี Internet of Things (IoT) ในการแยกขยะและตรวจสอบสถานะการใช้งานของถังขยะ ผู้ใช้งานสามารถติดตามสถานะของถังขยะว่าเต็มหรือไม่ รวมถึงดูข้อมูลประเภทของขยะที่ถังรับได้ ผ่านเว็บไซต์หรือแอปพลิเคชันที่ออกแบบมาเป็นพิเศษ ตัวถังขยะจะมีเซ็นเซอร์เพื่อตรวจจับปริมาณขยะ และระบบแยกประเภทขยะ เช่น พลาสติกกระดาษ หรืออะลูมิเนียม ด้วยการประมวลผลผ่านไมโครคอนโทรลเลอร์ และเชื่อมต่อข้อมูลสู่แพลตฟอร์มออนไลน์
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theory Section -->
+    <section id="related-theory" class="theory-section">
+        <div class="container">
+            <h1>THEORY</h1>
+            <div class="theory">
+                <!--<img src="1548632-removebg-preview.png" alt="About Image"> -->
+                <div class="content">
+                    <p>&nbsp;</p>
+                    <h3>ทฤษฎีและหลักการ</h3>
+                    <p>&nbsp;</p>
+                        <p>การทำโครงงานในครั้งนี้มีวัตถุประสงค์เพื่อสร้างถังขยะอัจฉริยะที่ผสมผสานเทคโนโลยี Internet of Things (IoT) ซึ่งกระบวนการทำงานของระบบสามารถแบ่งออกเป็นลำดับขั้นตอนดังนี้ ผู้ใช้ทิ้งขยะลงในถังขยะอัจฉริยะ เมื่อขยะถูกทิ้งลงมา กล้องเว็บแคม ที่ติดตั้งอยู่ภายในถังจะทำการจับภาพของขยะก่อนที่ขยะจะตกลงไปในช่องเก็บข้อมูล ระบบจะใช้เซ็นเซอร์ตรวจจับการเคลื่อนไหวเพื่อระบุว่ามีขยะถูกทิ้ง จากนั้นจะสั่งให้กล้องจับภาพขยะที่ถูกทิ้งเพื่อใช้ในการประมวลผลภาพที่ได้จากกล้องจะถูกส่งไปยัง Raspberry Pi ซึ่งเป็นหน่วยประมวลผลหลักของระบบ ผ่านโปรโตคอล MQTT (Message Queuing Telemetry Transport) ซึ่งเป็นโปรโตคอลสำหรับสื่อสารข้อมูลระหว่างอุปกรณ์ IoT จากนั้นRaspberry Pi จะทำการประมวลผลภาพขยะโดยใช้โมเดล Machine Learning (ML) หรือปัญญาประดิษฐ์ (AI) ซึ่งถูกฝึกมาเพื่อจำแนกประเภทขยะจากลักษณะของวัสดุ เช่น พลาสติก กระดาษ โลหะ หรือขยะทั่วไป เมื่อ Raspberry Pi วิเคราะห์และจำแนกประเภทขยะเสร็จสิ้น ระบบจะส่งสัญญาณไปยัง Stepper Motor ซึ่งทำหน้าที่ควบคุมกลไกภายในถังขยะเพื่อหมุนไปยังช่องที่เหมาะสมกับประเภทขยะที่ถูกจำแนก ระบบนี้ช่วยให้ขยะถูกแยกลงในช่องที่ถูกต้องโดยอัตโนมัติ จากนั้นระบบจะทำการอัปโหลดข้อมูลที่เกี่ยวข้องกับประเภทขยะที่ถูกทิ้งลงไปยัง Google Sheets ผ่านระบบ Cloud Database ข้อมูลที่ถูกบันทึกไว้สามารถนำมาใช้วิเคราะห์แนวโน้มของขยะในแต่ละวัน และช่วยให้หน่วยงานที่เกี่ยวข้องสามารถบริหารจัดการขยะได้อย่างมีประสิทธิภาพ ซึ่งในระบบมีเซ็นเซอร์ตรวจจับระดับขยะในแต่ละช่องของถังขยะ หากพบว่าถังขยะเต็ม ระบบจะทำการส่ง การแจ้งเตือน (Alert Notification) ไปยังอีเมลหรือแพลตฟอร์มของผู้ดูแลระบบ เพื่อให้สามารถเข้ามาจัดเก็บขยะได้ทันท่วงที ซึ่งข้อมูลทั้งหมดที่ได้รับจากถังขยะอัจฉริยะจะถูกนำไปแสดงผลผ่าน Dashboard ซึ่งสามารถเข้าถึงได้ผ่านเว็บไซต์หรือแอปพลิเคชันบนสมาร์ทโฟน โดยผู้ดูแลระบบสามารถตรวจสอบปริมาณขยะที่ถูกทิ้ง สถานะของถังขยะ และประสิทธิภาพของระบบการจัดเก็บขยะได้แบบเรียลไทม์<br>        
+                    <p>&nbsp;</p>
+                    อุปกรณ์ที่นำมาใช้<br>
+                    <p></p>
+                    1. Webcam <br>
+                    <p></p>
+                        <img src="photo/webcam.jpg"> <br>
+                        <p>เว็บแคมเป็นกล้องดิจิทัลที่บันทึกข้อมูลวิดีโอและเสียงและส่งแบบเรียลไทม์ผ่านอินเทอร์เน็ต โดยทั่วไปจะใช้สำหรับการประชุมทางวิดีโอ สตรีมมิงแบบสด การประชุมออนไลน์ และการบันทึกวิดีโอ โดยทั่วไปแล้วเว็บแคมจะเชื่อมต่อกับคอมพิวเตอร์หรือแล็ปท็อปผ่านพอร์ต Universal Serial Bus (USB) และมักจะติดตั้งไว้ในอุปกรณ์ เช่น แล็ปท็อปหรือจอภาพภายนอกหลักการทำงานของเว็บแคมประกอบไปด้วยเซ็นเซอร์ภาพ เลนส์ และโปรเซสเซอร์ ซึ่งเซ็นเซอร์ภาพจะจับภาพวิดีโอ ในขณะที่เลนส์จะโฟกัสแสงไปที่เซ็นเซอร์ จากนั้นโปรเซสเซอร์จะแปลงข้อมูลที่จับได้เป็นรูปแบบดิจิทัลที่สามารถส่งผ่านอินเทอร์เน็ตได้ เว็บแคมเชื่อมต่อกับคอมพิวเตอร์ซึ่งประมวลผลและแสดงฟีดวิดีโอ</p>
+                    2. Stepper Motor 5V<br>
+                    <p></p>
+                        <img src="photo/StepperMotor.png" width="300" height="200">
+                    <p></p>
+                        <p>มอเตอร์สเต็ปเป็นมอเตอร์ไฟฟ้าแบบไร้แปรงถ่าน (Brushless) และเป็นมอเตอร์ซิงโครนัส (Synchronous Motor) ที่แปลงพัลส์ดิจิทัลเป็นการหมุนของเพลามอเตอร์ โดยแต่ละรอบของมอเตอร์สเต็ปถูกแบ่งออกเป็นจำนวนสเต็ปที่แน่นอน เช่น 200 สเต็ปต่อรอบ และมอเตอร์ต้องได้รับพัลส์แยกสำหรับแต่ละสเต็ปมอเตอร์สเต็ปสามารถหมุนได้ทีละสเต็ปและแต่ละสเต็ปมีขนาดเท่ากัน โดยปกติแล้วจะมีมุมก้าวประมาณ 1.8° ต่อสเต็ป ทำให้สามารถควบคุมตำแหน่งของมอเตอร์ได้โดยไม่ต้องใช้กลไกป้อนกลับ (Feedback) เมื่อความถี่ของพัลส์ดิจิทัลเพิ่มขึ้น การเคลื่อนที่เป็นสเต็ปจะเปลี่ยนเป็นการหมุนต่อเนื่อง โดยความเร็วของมอเตอร์จะเป็นสัดส่วนโดยตรงกับความถี่ของพัลส์ มอเตอร์สเต็ปถูกใช้งานอย่างแพร่หลายในอุตสาหกรรมและเชิงพาณิชย์ เนื่องจากมี ต้นทุนต่ำ ความน่าเชื่อถือสูง แรงบิดสูงที่ความเร็วต่ำ และโครงสร้างที่เรียบง่ายแต่แข็งแรง สามารถทำงานได้ในเกือบทุกสภาพแวดล้อม</p>
+                    <p></p>
+                    3. Raspberry Pi 4 Model B<br>
+                    <p></p>
+                        <img src="photo/Rasp4.png"> <br>
+                    <p></p>
+                        <p>Raspberry Pi 4 Model B คือ บอร์ดคอมพิวเตอร์เดี่ยวใหม่ล่าสุด มีความเร็วโปรเซสเซอร์ที่เพิ่มขึ้น 4 เท่า มีประสิทธิภาพการทำงานของมัลติมีเดียที่ยอดเยี่ยม พร้อมหน่วยความจำที่มากขึ้น รวมถึงการเชื่อมต่อที่พัฒนาให้ดีขึ้น Raspberry Pi 4B โดดเด่นด้วยโปรเซสเซอร์ 64 บิตแบบ 4 แกน ทำงานที่ความเร็ว 1.5GHz รองรับการแสดงผลแบบสองจอความคมชัดสูงสุด 4K ที่อัตรา 60 fps มีหน่วยความจำแรมสูงสุด 4GB, LAN ไร้สายที่รองรับทั้งคลื่น 2.4 และ 5.0GHz, บลูทูธ 5.0/BLE, เครือข่าย True Gigabit Ethernet, USB 3.0 และการใช้งานเทคโนโลยี PoE (ผ่านส่วนเสริม PoE HAT แบบแยก)</p>
+                    
+                    <p>&nbsp;</p>
+
+                    Block diagram<br>
+                        <img src="photo/bd.png" width="500" height="400"> <br>
+                        <p>Block diagram ของถังขยะไฮเทคเพื่อการแยกและติดตามขยะอัจฉริยะ</p>
+                    <p>&nbsp;</p>
+
+                    Flowchart<br>
+                        <img src="photo/fc.png" width="400" height="300"><br>
+                        <p>Flowchart ของถังขยะไฮเทคเพื่อการแยกและติดตามขยะอัจฉริยะ</p>
+                    <p>&nbsp;</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Conclusion Section -->
+    <section id="experiment-results-and-conclusion" class="conclusion-section">
+        <div class="container">
+            <h1>CONCLUSION</h1>
+            <div class="conclusion">
+                <!--<img src="1548632-removebg-preview.png" alt="About Image"> -->
+                <div class="content">
+                    <p></p>
+                    <h3>ผลการทดลองและข้อสรุป</h3>
+                    <p></p>
+                    <p>จากโครงงาน TrashTrack+ ถังขยะไฮเทคเพื่อการแยกและติดตามขยะอัจฉริยะที่มีใช้ Internet of Things (IoT) เพื่อช่วยแก้ปัญหาการจัดการขยะที่ไม่มีประสิทธิภาพ ซึ่งส่งผลกระทบต่อสิ่งแวดล้อมและสุขภาพของประชาชน ระบบสามารถ แยกขยะอัตโนมัติ ตรวจสอบปริมาณขยะ และส่งข้อมูลไปยังแพลตฟอร์มออนไลน์แบบเรียลไทม์ ทำให้สามารถติดตามสถานะของถังขยะและวางแผนการจัดเก็บได้อย่างมีประสิทธิภาพ
+                        ระบบทำงานโดยใช้เซ็นเซอร์ตรวจจับประเภทของขยะ เช่น พลาสติก กระดาษ อะลูมิเนียม และตรวจวัดปริมาณขยะผ่านไมโครคอนโทรลเลอร์ ซึ่งข้อมูลทั้งหมดจะถูกส่งไปยังแพลตฟอร์มออนไลน์ที่พัฒนาเฉพาะ ผู้ใช้งานสามารถตรวจสอบข้อมูลผ่าน เว็บไซต์หรือแอปพลิเคชัน เพื่อช่วยให้การบริหารจัดการขยะเป็นไปอย่างมีประสิทธิภาพ ลดปริมาณขยะตกค้าง และสนับสนุนการรีไซเคิล
+                        จากการพัฒนาและทดสอบพบว่าระบบสามารถแยกขยะและส่งข้อมูลได้อย่างถูกต้อง อย่างไรก็ตาม ยังมีข้อจำกัดบางประการ เช่น ความแม่นยำของเซ็นเซอร์ในการแยกขยะ อาจต้องปรับปรุง ความเร็วในการประมวลผล ที่อาจล่าช้าเมื่อมีขยะจำนวนมาก และ ต้นทุนของอุปกรณ์ ที่อาจสูงหากต้องนำไปใช้งานในวงกว้าง
+                        แม้จะมีข้อจำกัด แต่โครงงานนี้มีศักยภาพสูงในการพัฒนาเพื่อช่วยแก้ปัญหาการจัดการขยะในเมือง ทำให้เมืองสะอาดขึ้น ลดมลพิษ และสนับสนุนแนวทางการพัฒนาอย่างยั่งยืนในอนาคต
+                        <br>
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poster Section -->
+    <section id="poster" class="poster-section">
+        <div class="container">
+            <h1>POSTER</h1>
+            <div class="poster">
+                <!--<img src="1548632-removebg-preview.png" alt="About Image"> -->
+                <div class="content">
+                    <p></p>
+                    <h3>About Poster</h3>
+                    <p>คุณสามารถดู TrashTrack+ Poster ได้ที่นี่ !</p>
+                    <a href="https://www.canva.com/design/DAGjLaQJVPg/fjxha0tIsp0MXELnOuNJeg/edit?utm_content=DAGjLaQJVPg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">CLICK HERE !</a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p>&nbsp;</p>
+
+    <footer id="footer">
+        <p class="footer-title">TrashTrack+</p>
+        <div>
+            <p>10th floor, King Mongkut's Institute of Technology Ladkrabang</p>
+            <p>Copyright©2025, TrashTrack+, Inc. All Rights Reserved</p>
+        </div>
+        <a href="contact.html">CONTACT US</a>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("nav");
+            const menuIcon = document.querySelector(".menu-icon");
+            const menuText = document.querySelector(".menu-text");
+            nav.classList.toggle("active");
+            menuIcon.classList.toggle("close");
+
+            // Change the text based on the menu state
+            if (menuIcon.classList.contains("close")) {
+                menuText.textContent = "Close";
+            } else {
+                menuText.textContent = "Menu";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
